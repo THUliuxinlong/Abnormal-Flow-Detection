@@ -14,7 +14,7 @@
 
 ### 1. 不同种类的数量
 
-<img src="https://github.com/THUliuxinlong/PicGo/raw/main/img/2022-12-21-200911.png" alt="image-20221210175122459" style="zoom:80%;" />
+<img src="https://lxlpicbed.oss-cn-beijing.aliyuncs.com/img/2023-03-07-122819.png" alt="image-20230307122818569" style="zoom:80%;" />
 
 ``` python
 train_data.shape:(125973, 40), test_data.shape:(22544, 40)
@@ -47,7 +47,7 @@ train_data.shape:(125973, 40), test_data.shape:(22544, 40)
 
 计算不同特征的spearman系数
 
-<img src="https://github.com/THUliuxinlong/PicGo/raw/main/img/2022-12-21-200919.png" alt="image-20221210175140401" style="zoom:80%;" />
+<img src="https://lxlpicbed.oss-cn-beijing.aliyuncs.com/img/2023-03-07-122615.png" alt="image-20230307122614556" style="zoom:80%;" />
 
 ## 3、SMOTE
 
@@ -113,9 +113,9 @@ AdaBoost和RNN在训练集的效果很差，没有提交。采用PCA降纬，数
 
 ### 1. 近邻的平均距离阈值
 
-<img src="https://github.com/THUliuxinlong/PicGo/raw/main/img/2022-12-21-200922.png" alt="image-20221217165048679" style="zoom:80%;" />
+<img src="https://lxlpicbed.oss-cn-beijing.aliyuncs.com/img/2023-03-07-122635.png" alt="image-20230307122634576" style="zoom:80%;" />
 
-<img src="https://github.com/THUliuxinlong/PicGo/raw/main/img/2022-12-21-200923.png" alt="image-20221217165108258" style="zoom:80%;" />
+<img src="https://lxlpicbed.oss-cn-beijing.aliyuncs.com/img/2023-03-07-122654.png" alt="image-20230307122653465" style="zoom:80%;" />
 
 根据上图选取距离阈值应该在0.1到0.2之间，最终选取阈值为0.164，当数据与近邻的平均距离大于等于0.164，则判别为类别0。
 
@@ -127,11 +127,9 @@ AdaBoost和RNN在训练集的效果很差，没有提交。采用PCA降纬，数
 
 ### 2.概率阈值
 
-<img src="https://github.com/THUliuxinlong/PicGo/raw/main/img/2023-01-07-122838.png" alt="image-20230107122837087" style="zoom:80%;" />
+<img src="https://lxlpicbed.oss-cn-beijing.aliyuncs.com/img/2023-03-07-122712.png" alt="image-20230307122711451" style="zoom:80%;" />
 
-<img src="https://github.com/THUliuxinlong/PicGo/raw/main/img/2023-01-07-122850.png" alt="image-20230107122849287" style="zoom:80%;" />
-
-
+<img src="https://lxlpicbed.oss-cn-beijing.aliyuncs.com/img/2023-03-07-122728.png" alt="image-20230307122727671" style="zoom:80%;" />
 
 概率大于0.9的数量过多，为了更好的分析概率分布，只绘制分类概率小于0.9的数据。根据上图最终选取概率阈值0.4，分类概率小于阈值则判别为新类0。
 
@@ -141,4 +139,4 @@ AdaBoost和RNN在训练集的效果很差，没有提交。采用PCA降纬，数
 
 ## 6、最终分数
 
-![image-20230110102813473](https://github.com/THUliuxinlong/PicGo/raw/main/img/2023-01-10-102815.png)
+![image-20230307122759397](https://lxlpicbed.oss-cn-beijing.aliyuncs.com/img/2023-03-07-122800.png)
